@@ -5,7 +5,8 @@ namespace RRUI
 {
     public class MainMenu:IMenu
     {
-        public void Start() {
+        public void Start() 
+        {
             
             bool repeat = true;
             
@@ -32,17 +33,20 @@ namespace RRUI
             } while(repeat);
             
         }
-        private void ViewRestaurant(){
+        private void ViewRestaurant()
+        {
             
             Resturant goodTaste = new Resturant("Good Taste", "Tampa", "Florida");
             
             goodTaste.Reviews = new List<Review>
             {
-                new Review{
+                new Review
+                {
                     Rating = 5,
                     Description = "Okurrrrrrr"
                 },
-                new Review{
+                new Review
+                {
                     Rating = 5,
                     Description = "Heck yeah, dis bussin"
                 }
